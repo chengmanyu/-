@@ -10,7 +10,7 @@
 我們提供官方提取的安裝包（版本 1.0.124.0）：
 
 - 檔案名稱：`8497DDF3.639A2791C9AB_1.0.124.0_neutral___kf545nqv09rxe.Msixbundle`
-- 下載位置：請到 **[Releases](https://github.com/你的使用者名稱/你的儲存庫名稱/releases)** 頁面下載最新版附檔
+- 下載位置：請到 **[Releases](https://github.com/chengmanyu/XiaoAi-Launcher/releases)** 頁面下載最新版附檔
 
 ### 安裝方式（三種選一種）
 
@@ -60,7 +60,7 @@
 
 ## 下載與使用方式
 
-請到 **[Releases](https://github.com/你的使用者名稱/你的儲存庫名稱/releases)** 頁面下載你想要的版本。
+請到 **[Releases](https://github.com/chengmanyu/XiaoAi-Launcher/releases)** 頁面下載你想要的版本。
 
 
 ## 安裝與執行方式
