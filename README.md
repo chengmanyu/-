@@ -67,30 +67,35 @@
 
 ## 安裝與執行方式
 
-1. 下載 V2_xiaoi_launcher.py（或 V1）
-2. 確定電腦已安裝 **Python 3.8+**
-3. 安裝必要套件（第一次執行需安裝）：
+1.下載 Release 中的 ZIP 檔（例如 XiaoAi-Launcher-V3.zip），解壓縮到一個資料夾。
+2. 確定電腦已安裝 **Python 3.8+**（從 https://www.python.org/ 下載）。
+3. 安裝必要套件（第一次執行需安裝）：開啟命令提示字元，切換到解壓縮資料夾，執行：
 
    ```bash
-   pip install keyboard pystray pillow speechrecognition pyautogui pygetwindow pynput
+   pip install -r requirements.txt
    ```
-4. 雙擊執行 .py 檔案，或在命令提示字元執行：
+4. 雙擊執行 V3_xiaoi_launcher.py 檔案，或在命令提示字元執行：
    ```bash
-   python V2_xiaoi_launcher.py
+   python V3_xiaoi_launcher.py
    ```
   常用啟動參數：
   ```bash
-  python V2_xiaoi_launcher.py --no-voice       # 關閉語音喚醒
-  python V2_xiaoi_launcher.py --no-auto-click  # 關閉自動點擊
+  python V3_xiaoi_launcher.py --no-voice # 關閉語音喚醒
+  python V3_xiaoi_launcher.py --no-auto-click # 關閉自動點擊
   ```
+
+## V3 特殊說明
+
+- Vosk 模型：下載 ZIP 檔後，解壓縮會看到 vosk-model-cn.zip。解壓縮它到專案根目錄（產生 vosk-model-cn 資料夾）。
+- 自訂熱鍵/喚醒詞：右鍵系統托盤圖示 → 選擇「設定熱鍵與喚醒詞」，會開啟 GUI 視窗編輯。編輯後需重新啟動程式生效。
 
 ## 常見問題
 
 - 語音喚醒不靈敏？
-  → 請確保麥克風正常，並遠離噪音源。V2 版本已優化靈敏度。
+  → 請確保麥克風正常，並遠離噪音源。V3 使用離線 Vosk 模型，靈敏度更高。
 - 自動點擊位置不準？
   → 請優先使用 V2 版本，第一次執行會引導你校準（把滑鼠移到語音圓圈正中央，按 c 確認）。 （不同螢幕解析度也 OK）
-  → 校準後位置會儲存，每次啟動後請先校準,移動了小愛視窗也要校準 (右鍵系統托盤)
+  → 第一次執行會引導校準（把滑鼠移到語音圓圈正中央，按 c 確認）。校準後位置會儲存。右鍵托盤 → 重新校準。
 - 想關閉程式？
   → 右鍵系統托盤的小藍色 AI 圖示 → 結束程式
 
@@ -98,6 +103,7 @@
 MIT License – 歡迎 fork / 修改 / 分享
 
 ## 感謝
+- 感謝 Vosk 提供離線語音辨識模型
 - 感謝 Google Speech Recognition 提供免費語音辨識
 - 感謝 pyautogui、keyboard 等優秀的開源專案
 
