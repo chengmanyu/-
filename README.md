@@ -67,10 +67,9 @@
 
 ## 安裝與執行方式
 
-1.下載 Release 中的 ZIP 檔（例如 XiaoAi-Launcher-V3.zip），解壓縮到一個資料夾。
+1. 下載 Release 中的 ZIP 檔（例如 XiaoAi-Launcher-V3.zip），解壓縮到一個資料夾。
 2. 確定電腦已安裝 **Python 3.8+**（從 https://www.python.org/ 下載）。
 3. 安裝必要套件（第一次執行需安裝）：開啟命令提示字元，切換到解壓縮資料夾，執行：
-
    ```bash
    pip install -r requirements.txt
    ```
